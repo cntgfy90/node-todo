@@ -1,0 +1,30 @@
+{
+  "name": "node-todo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Stepan Kolomiiets <stepan.kolomiiets@dresslerconsulting.com>",
+  "license": "MIT",
+  "scripts": {
+    "css": "node-sass ./src/sass/main.scss ./assets/css/main.css",
+    "css-watch": "node-sass --watch ./src/sass/main.scss ./assets/css/main.css",
+    "start": "nodemon ./src/app.js",
+    "lint": "npx eslint ./src/**/*.js --fix",
+    "format": "prettier-eslint ./src**/*.js --write"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.6.1",
+    "express": "^4.17.1",
+    "materialize-css": "^1.0.0-rc.2",
+    "mysql": "^2.17.1",
+    "node-sass": "^4.12.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-promise": "^4.1.1",
+    "nodemon": "^1.19.1",
+    "prettier-eslint-cli": "^4.7.1"
+  }
+}
